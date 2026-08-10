@@ -1,0 +1,6 @@
+*.png
+*.jpg
+*.bak
+*.log
+desktop/
+**/*backup*

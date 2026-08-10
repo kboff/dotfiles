@@ -1,0 +1,43 @@
+binds {
+    Mod+M hotkey-overlay-title="Bar: Toggle (Primary)" { spawn "dms" "ipc" "call" "bar" "toggle" "index" "0"; }
+    Super+Alt+L repeat=false hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
+    Super+Comma hotkey-overlay-title="Settings: Open" { spawn "dms" "ipc" "call" "settings" "open"; }
+    Super+Space hotkey-overlay-title="App Launcher: Toggle" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
+    Super+V hotkey-overlay-title="Clipboard: Toggle" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
+    MouseBack { focus-column-left; }
+    MouseForward { focus-column-right; }
+    Super+F hotkey-overlay-title="Maximize Column" { maximize-column; }
+    Super+O repeat=false hotkey-overlay-title="Toggle Floating" { toggle-window-floating; }
+    Super+Q hotkey-overlay-title="Close Window" { close-window; }
+    Super+R hotkey-overlay-title="Cycle Column Width" { switch-preset-column-width; }
+    Alt+0 { spawn "mark-shot"; }
+    Mod+T hotkey-overlay-title="open kitty" { spawn "kitty"; }
+    Super+B repeat=false hotkey-overlay-title="open browser" { spawn "zen-browser"; }
+    Super+E repeat=false hotkey-overlay-title="open filemanager" { spawn "nautilus"; }
+    Super+D hotkey-overlay-title="Toggle Overview" { toggle-overview; }
+
+    //window-operation
+    Super+H hotkey-overlay-title="Focus Left" { focus-column-left; }
+    Super+Left hotkey-overlay-title="Focus Left" { focus-column-left; }
+
+    Super+L hotkey-overlay-title="Focus Right" { focus-column-right; }
+    Super+Right hotkey-overlay-title="Focus Right" { focus-column-right; }
+
+    Super+K hotkey-overlay-title="Focus Workspace Up" { focus-workspace-up; }
+    Super+Up hotkey-overlay-title="Focus Workspace Up" { focus-workspace-up; }
+
+    Super+J hotkey-overlay-title="Focus Workspace Down" { focus-workspace-down; }
+    Super+Down hotkey-overlay-title="Focus Workspace Down" { focus-workspace-down; }
+
+    Super+Shift+H hotkey-overlay-title="Move Left" { move-column-left; }
+    Super+Shift+Left hotkey-overlay-title="Move Left" { move-column-left; }
+
+    Super+Shift+L hotkey-overlay-title="Move Right" { move-column-right; }
+    Super+Shift+Right hotkey-overlay-title="Move Right" { move-column-right; }
+
+    Super+Shift+K hotkey-overlay-title="Move Up" { move-column-to-workspace-up; }
+    Super+Shift+Up hotkey-overlay-title="Move Up" { move-column-to-workspace-up; }
+
+    Super+Shift+J hotkey-overlay-title="Move Down" { move-column-to-workspace-down; }
+    Super+Shift+Down hotkey-overlay-title="Move Down" { move-column-to-workspace-down; }
+}
