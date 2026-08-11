@@ -49,5 +49,22 @@ return{
 			skip_heading = true
     },
     },
+	keys = {
+		{"<leader>mk",function ()require("render-markdown").toggle()	end, desc = "Toggle markdown rendering",mode = {"n", "t"} }
+    }
+  },
+
+  {
+	'brianhuster/live-preview.nvim',
+	dependencies = {
+			'ibhagwan/fzf-lua',
+	},
+	keys = {
+		{"<leader>mp",function() vim.cmd("LivePreview start") end, desc = "Start markdown preview in browser",mode = {"n", "t"} },
+		{"<leader>mc",function() vim.cmd("LivePreview close") end, desc = "Close markdown preview in browser",mode = {"n", "t"} },
+		{"<leader>mp",function() vim.cmd("LivePreview pick") end, desc = "Pick a file to preview",mode = {"n", "t"} },
+	}
   }
+
+
 }
