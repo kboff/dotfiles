@@ -60,7 +60,7 @@ return{
 			'ibhagwan/fzf-lua',
 	},
 	keys = {
-		{"<leader>mp",function() vim.cmd("LivePreview start") end, desc = "Start markdown preview in browser",mode = {"n", "t"} },
+		{"<leader>ml",function() vim.cmd("LivePreview start") end, desc = "Start markdown preview in browser",mode = {"n", "t"} },
 		{"<leader>mc",function() vim.cmd("LivePreview close") end, desc = "Close markdown preview in browser",mode = {"n", "t"} },
 		{"<leader>mp",function() vim.cmd("LivePreview pick") end, desc = "Pick a file to preview",mode = {"n", "t"} },
 	}

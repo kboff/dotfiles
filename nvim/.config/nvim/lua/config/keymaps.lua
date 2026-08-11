@@ -17,8 +17,8 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
 
---vim.keymap.set({ "n", "x", "o" }, "<S-H>", "^", { desc = "Start of line" })
---vim.keymap.set({ "n", "x", "o" }, "<S-L>", "$", { desc = "End of line" })
+vim.keymap.set({ "n", "x", "o" }, "<S-H>", "^", { desc = "Start of line" })
+vim.keymap.set({ "n", "x", "o" }, "<S-L>", "$", { desc = "End of line" })
 vim.keymap.set('n', '<leader>cd', ':lcd %:h<CR>', { desc = "Local CD to current file directory" })
 vim.keymap.set('n', '<C-l>', '<cmd>nohlsearch<CR>')  --清除搜索高亮
 vim.keymap.set('n', '<C-/>', '<Cmd>normal gcc<CR>')  -- 注释当前行
