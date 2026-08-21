@@ -118,8 +118,11 @@ return {
         ["_"] = { "trim_whitespace" },
       },
 
-      format_on_save = function(_)
-        -- Disable with a global or buffer-local variable
+  format_on_save = function(bufnr)
+    -- 禁用 Markdown 文件的自动格式化
+    if vim.bo[bufnr].filetype == "markdown" then
+      return nil
+    end
         if vim.g.enable_autoformat then
           return { timeout_ms = 500, lsp_format = "fallback" }
         end

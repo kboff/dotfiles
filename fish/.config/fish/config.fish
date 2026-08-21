@@ -3,10 +3,11 @@ if status is-interactive
 set fish_greeting
 set -gx EDITOR nvim
 set -gx VISUAL nvim
+set -gx PAGER moor
 abbr -a y yazi
 abbr -a n nvim
 abbr -a f fzf-open
-abbr -a cf 'set -l dir (fd --type d | fzf); and cd $dir'
+abbr -a cf 'set -l dir (fd -H --type d | fzf); and cd $dir'
 abbr -a ar systemctl --user restart pipewire pipewire-pulse wireplumber
 abbr -a yt yt-dlp -f "bestvideo[height<=2160]+bestaudio" --merge-output-format mp4
 abbr update sudo pacman -Syu
