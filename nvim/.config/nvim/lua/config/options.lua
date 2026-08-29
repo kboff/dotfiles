@@ -7,7 +7,7 @@ vim.opt.mouse = "a"
 vim.opt.commentstring = "# %s"
 -- 缩进
 vim.opt.expandtab = false
-vim.opt.shiftwidth = 4
+vim.opt.shiftwidth = 2
 vim.opt.tabstop = 4
 vim.opt.smartindent = true
 vim.opt.wrap = false

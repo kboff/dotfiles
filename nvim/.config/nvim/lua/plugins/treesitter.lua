@@ -39,6 +39,7 @@ return {
         "vimdoc",
         "vue",
         "yaml",
+		"nix",
       }
       highlight = {
           enable = true,
