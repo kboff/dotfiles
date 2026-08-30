@@ -43,4 +43,4 @@ function proxy_status
     echo "https_proxy : $https_proxy"
 end
 
-
+zoxide init fish | source

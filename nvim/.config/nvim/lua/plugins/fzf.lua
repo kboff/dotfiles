@@ -9,6 +9,7 @@ return {
       { "<leader>bl", "<cmd>FzfLua buffers<cr>", desc = "󰉋 缓冲区 列表" },
       { "<leader>:", "<cmd>FzfLua command_history<cr>", desc = "󰋖 命令历史" },
       { "<leader>,", "<cmd>FzfLua oldfiles<cr>", desc = "󰈑 最近文件" },
+      { "<leader>r", "<cmd>FzfLua oldfiles<cr>", desc = "󰈑 最近文件" },
       { "<leader>sg", "<cmd>FzfLua live_grep<cr>", desc = "󰍉 全局搜索" },
       { "<leader>sw", "<cmd>FzfLua grep_cword<cr>", desc = "󰍉 搜索当前词" },
       { "<leader>sb", "<cmd>FzfLua lgrep_curbuf<cr>", desc = "󰍉 当前文件搜索" },
